@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 2.0;
+  letter-spacing: 0.1em;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+ }
+
+h2,h3,h4,h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,li,dl,dt,dd {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+a { 
+  text-decoration: none; 
+  transition: all .6s ease;
+  color: #777777;
+}
+
+a:hover { 
+  transition: all .6s ease;
+}
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+/* index/header */
+
+header{
+  height: 100px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+header .content-wrapper{
+  height: 100%;
+  display: flex;
+}
+
+.header-left{
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-left h1{
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.header-left p{
+  margin: 0;
+  color: #777777;
+}
+
+.header-center{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.header-center nav ul{
+  display: flex;
+}
+
+.header-center nav{
+  margin: 0 auto;
+}
+.header-center li{
+  margin-right: 20px;
+}
+
+.header-center a{
+  text-decoration: none;
+  color: #000;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  text-align: center;
+}
+
+.header-right i {
+  margin: 0 auto;
+}
+
+/* index/mainvisual */
+
+.mainvisual{
+  width: 100%;
+  height: 600px;
+  margin-bottom: 60px;
+}
+
+.mainvisual .content-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.mainvisual img{
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.mainvisual h2{
+  margin-top: 50px;
+  font-weight: normal;
+  color: #777777;
+  text-align: center;
+}
+
+.topics{
+  margin: 120px 0;
+}
+
+.topics .content-wrapper{
+  border-bottom: 1px solid #dfdcdc;
+  padding-bottom: 80px;
+}
+
+.topics table{
+  width: 100%;
+}
+
+.topics .content-wrapper tr{
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.topics th{
+  width: 30%;
+  font-weight: normal;
+  color: #777777;
+}
+
+.topics td{
+  width: 70%;
+}
+
+.topic .more{
+  width: auto;
+  text-align: center;
+}
+
+.topics nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.topics li{
+  color: #777777;
+  border: 1px solid #777777;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+
+.more li :nth-child(4){
+  color: blue;
+}
+
+.topics li:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* index/footer/info */
+
+footer{
+  width: 100%;
+}
+
+.info{
+  width: 100%;
+  margin: 120px auto;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid  #dfdcdc;
+  color: #777777;
+}
+
+.info h2, h4{
+  color: black;
+}
+
+.profile, .news, .recent, .category{
+  width: 20%;
+}
+
+.profile-top{
+  display: flex;
+}
+
+.self-photo{
+  width: 40%;
+  margin-right: 10px;
+}
+
+.self-photo img{
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-top-name{
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* index/footer/recent */
+
+.recent tr{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.recent th{
+  font-weight: normal;
+  text-decoration: underline;
+  font-size: 1.15em;
+}
+
+.recent td{
+  font-size: smaller;
+}
+
+/* index/footer/category */
+
+input{
+  box-sizing: border-box;
+  outline-offset: -2px;
+  overflow: visible;
+  font-family: inherit;
+  line-height: 1.15;
+  margin: 0;
+  font-size: 100%;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  cursor: text;
+  font: 400 13.3333px Arial;
+}
+
+
+/* index/footer/copy-lights */
+.copy-lights{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  width: 70%;
+}
+
+.sns-link ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns-link li{
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.sns-link a{
+  color: black;
+}
+
+.copylight{
+  color: #777777;
+}
